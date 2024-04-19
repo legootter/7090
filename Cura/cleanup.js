@@ -1,10 +1,12 @@
 import fs from "fs"
 let infills=fs.readdirSync("./outputraw")
-let i=0
 let start= new Date().valueOf()
 for(const infill of infills){
-        fs.rmSync(`./outputraw/${infill}`)
-        fs.rmSync(`./output/${infill}`)
+        let files=fs.readdirSync(`./outputraw/${infill}`)
+        for(const file of files){
+                fs.rmSync(`./outputraw/${infill}/${file}`,{recursive:true})
+        }
+        fs.rmSync(`./output/${infill}`,{recursive:true})
 }
 let end = new Date().valueOf()
-console.log(`Cleanup completed in ${end-start} ms, ${i} files were deleted`)
+console.log(`Cleanup completed in ${end-start} ms`)

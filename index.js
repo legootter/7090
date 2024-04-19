@@ -4,11 +4,11 @@ const app=express()
 app.listen(1014)
 
 app.all("/",(req,res)=>{
-res.sendFile("C:\\dev\\School\\MEGR7090\\index.html")
+res.sendFile("C:\\dev\\School\\7090\\index.html")
 })
 
 app.get("/getcuradata",(req,res)=>{
-    exec("node getData.js",{cwd:"C:\\dev\\School\\MEGR7090\\Cura"},(err,out,serr)=>{
+    exec("node getData.js",{cwd:"C:\\dev\\School\\7090\\Cura"},(err,out,serr)=>{
         if(err)console.log(err)
         if(out)console.log(out)
         if(serr)console.log(serr)
@@ -16,7 +16,7 @@ app.get("/getcuradata",(req,res)=>{
     res.redirect("/")
 })
 app.get("/processcuradata",(req,res)=>{
-    exec("node process.js",{cwd:"C:\\dev\\School\\MEGR7090\\Cura"},(err,out,serr)=>{
+    exec("node process.js",{cwd:"C:\\dev\\School\\7090\\Cura"},(err,out,serr)=>{
         if(err)console.log(err)
         if(out)console.log(out)
         if(serr)console.log(serr)
@@ -24,7 +24,7 @@ app.get("/processcuradata",(req,res)=>{
     res.redirect("/")
 })
 app.get("/concatcuradata",(req,res)=>{
-    exec("node concat.js",{cwd:"C:\\dev\\School\\MEGR7090\\Cura"},(err,out,serr)=>{
+    exec("node concat.js",{cwd:"C:\\dev\\School\\7090\\Cura"},(err,out,serr)=>{
         if(err)console.log(err)
         if(out)console.log(out)
         if(serr)console.log(serr)
@@ -32,7 +32,7 @@ app.get("/concatcuradata",(req,res)=>{
     res.redirect("/")
 })
 app.get("/cleanupcuradata",(req,res)=>{
-    exec("node cleanup.js",{cwd:"C:\\dev\\School\\MEGR7090\\Cura"},(err,out,serr)=>{
+    exec("node cleanup.js",{cwd:"C:\\dev\\School\\7090\\Cura"},(err,out,serr)=>{
         if(err)console.log(err)
         if(out)console.log(out)
         if(serr)console.log(serr)

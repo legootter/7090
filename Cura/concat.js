@@ -1,29 +1,35 @@
-import fs from "fs"
-let infills=fs.readdirSync("./outputraw")
-let i=0
-let xs={}
-let ys={}
-let zs={}
-let start= new Date().valueOf()
+import fs from "fs";
+let infills=fs.readdirSync("./output");
+let plots={};
 
 for(const infill of infills){
-    xs[infill]=""
-    ys[infill]=""
-    zs[infill]=""
-    let files=fs.readdirSync(`./output/${infill}`)
-    for(const file of files){
-        let holeSize=file.match(/holeSize=[0-9]*/)[0].split("=")[1]
-        let wallCount=file.match(/wallCount=[0-9]/)[0].split("=")[1]
-        let infillDensity=file.match(/infillDensity=[0-9]*/)[0].split("=")[1]
-        ys[infill]+=` ${holeSize}`
-        xs[infill]+=` ${infillDensity}`
-        let data=fs.readFileSync(`./output/${infill}/${file}`)
-        zs[infill]+=` ${data}`
-        i+=1
+    let walls=fs.readdirSync(`./output/${infill}`)
+    plots[infill]={}
+    for(const wall of walls){
+        plots[infill][wall]={hole:[],infill:[],length:[]}
+        let holes=fs.readdirSync(`./output/${infill}/${wall}`)
+        for(const hole of holes){
+            if(!plots[infill][wall]["hole"].includes(hole))plots[infill][wall]["hole"].push(hole)
+            let files=fs.readdirSync(`./output/${infill}/${wall}/${hole}`)
+            for(const file of files){
+                let infillDensity=file.match(/infillDensity=[0-9]*/)[0].split("=")[1]
+                if(!plots[infill][wall]["infill"].includes(infillDensity))plots[infill][wall]["infill"].push(infillDensity)
+                let data=fs.readFileSync(`./output/${infill}/${wall}/${hole}/${file}`)
+                plots[infill][wall]["length"].push(data.toString())
+            }
+            plots[infill][wall]["length"].push(";")
         }
-    fs.writeFileSync(`results/${infill}.m`,`x=[${JSON.stringify(xs[infill]).replace(`"`,"").replace(`"`,"")}];\ny=[${JSON.stringify(ys[infill]).replace(`"`,"").replace(`"`,"")}];\nz=[${JSON.stringify(zs[infill]).replace(`"`,"").replace(`"`,"")}];\np=5000;\nscatter3(x,y,z,p,z,"filled")`)
+    }
+    break
 }
-let end = new Date().valueOf()
-console.log(`processing completed in ${end-start} ms, ${i} files were processed`)
-//TODO
-//Autoformat fs writefile to matlab and save as a .m file
+
+for(const infill in plots){
+    console.log(infill)
+    for(const wall in plots[infill]){
+        console.log(wall)
+        plots[infill][wall]["hole"]="["+plots[infill][wall]["hole"].toString()+"]"
+        plots[infill][wall]["infill"]="["+plots[infill][wall]["infill"].toString()+"]"
+        plots[infill][wall]["length"]="["+plots[infill][wall]["length"].toString()+"]"
+        fs.writeFileSync(`results/${wall}${infill}.m`,`A=${plots[infill][wall]["hole"]};\nB=${plots[infill][wall]["infill"]};\nC=${plots[infill][wall]["length"]};\nsurc(B,A,C)`)
+    }
+}
