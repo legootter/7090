@@ -1,3 +1,9 @@
+objbkp/*
+Cura/results/*
+Cura/output/*
+Cura/outputraw/*
+bkp/*
+
 # Logs
 logs
 *.log
