@@ -1,0 +1,141 @@
+
+Cura_SteamEngine version 4.13.1
+Copyright (C) 2021 Ultimaker
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+[WARNING] Unrecognized data type in JSON setting machine_disallowed_areas
+[WARNING] Unrecognized data type in JSON setting nozzle_disallowed_areas
+[WARNING] Unrecognized data type in JSON setting machine_head_with_fans_polygon
+[WARNING] Unrecognized data type in JSON setting machine_head_with_fans_polygon
+[WARNING] JSON setting gantry_height has no default_value!
+loading 'C:\dev\School\7090\objects\575.stl' took 0.000 seconds
+Loaded from disk in 0.000s
+[WARNING]  -s mesh_rotation_matrix="[[1,0,0], [0,1,0], [0,0,1]]" -s mesh_position_y="0" -s center_object="false" -s small_feature_speed_factor_0="50" -s small_feature_speed_factor="50" -s small_feature_max_length="0" -s wipe_hop_speed="10" -s wipe_hop_amount="1" -s wipe_hop_enable="true" -s wipe_retraction_retract_speed="3" -s wipe_retraction_amount="1" -s max_extrusion_before_wipe="10" -s clean_between_layers="false" -s wipe_retraction_extra_prime_amount="0" -s bridge_skin_density_3="80" -s bridge_skin_material_flow_3="110" -s bridge_skin_speed_3="15" -s bridge_fan_speed_2="0" -s bridge_skin_density_2="75" -s bridge_skin_speed_2="25" -s bridge_enable_more_layers="true" -s bridge_skin_density="100" -s bridge_wall_material_flow="50" -s bridge_sparse_infill_max_density="0" -s bridge_skin_support_threshold="50" -s wall_overhang_angle="90" -s adaptive_layer_height_variation_step="0.01" -s adaptive_layer_height_enabled="false" -s wireframe_nozzle_clearance="1" -s wireframe_roof_outer_delay="0.2" -s wireframe_roof_fall_down="2" -s wireframe_straight_before_down="20" -s wireframe_strategy="compensate" -s wireframe_drag_along="0.6" -s wireframe_fall_down="0.5" -s wireframe_top_jump="0.6" -s wireframe_up_half_speed="0.3" -s wireframe_bottom_delay="0" -s wireframe_top_delay="0" -s wireframe_printspeed_flat="5" -s wireframe_printspeed_down="5" -s wireframe_printspeed_up="5" -s wireframe_printspeed_bottom="5" -s adaptive_layer_height_variation="0.1" -s flow_rate_extrusion_offset_factor="100" -s flow_rate_max_extrusion_offset="0" -s wipe_retraction_enable="true" -s magic_fuzzy_skin_point_dist="0.8" -s magic_fuzzy_skin_thickness="0.3" -s magic_fuzzy_skin_outside_only="false" -s wireframe_flat_delay="0.1" -s magic_fuzzy_skin_enabled="false" -s support_conical_angle="30" -s support_conical_enabled="false" -s cross_infill_density_image="" -s cross_infill_pocket_size="2" -s coasting_speed="90" -s conical_overhang_hole_size="0" -s conical_overhang_enabled="false" -s draft_shield_height="10" -s draft_shield_height_limitation="full" -s draft_shield_dist="10" -s draft_shield_enabled="false" -s wipe_repeat_count="5" -s bridge_fan_speed_3="0" -s support_skip_some_zags="false" -s minimum_polygon_circumference="1" -s material_flow_dependent_temperature="false" -s roofing_pattern="lines" -s slicing_tolerance="middle" -s smooth_spiralized_contours="true" -s coasting_min_volume="0.8" -s magic_mesh_surface_mode="normal" -s mold_angle="40" -s mold_roof_height="0.5" -s mold_width="5" -s mold_enabled="false" -s cutting_mesh="false" -s meshfix_maximum_travel_resolution="1" -s meshfix_maximum_resolution="0.5" -s remove_empty_first_layers="true" -s alternate_carve_order="true" -s switch_extruder_extra_prime_amount="0" -s switch_extruder_prime_speed="20" -s cross_support_density_image="" -s switch_extruder_retraction_amount="20" -s wireframe_height="3" -s ooze_shield_dist="2" -s ooze_shield_angle="60" -s prime_tower_position_y="200" -s prime_tower_min_volume="6" -s prime_tower_size="20" -s prime_tower_enable="false" -s raft_base_fan_speed="0" -s raft_interface_fan_speed="0" -s raft_surface_fan_speed="0" -s raft_base_jerk="20" -s raft_interface_jerk="20" -s wall_overhang_speed_factor="100" -s raft_base_acceleration="3000" -s raft_interface_acceleration="3000" -s raft_base_speed="15" -s raft_surface_speed="20" -s raft_base_line_spacing="1.6" -s raft_base_line_width="0.8" -s raft_interface_line_spacing="0.9" -s raft_interface_thickness="0.15" -s raft_surface_line_width="0.4" -s raft_surface_thickness="0.1" -s raft_surface_layers="2" -s bridge_skin_material_flow="60" -s raft_airgap="0.3" -s raft_smoothing="5" -s infill_mesh="false" -s raft_margin="15" -s brim_outside_only="true" -s brim_replaces_support="true" -s material_anti_ooze_retraction_speed="5" -s material_crystallinity="false" -s material_bed_temperature="60" -s default_material_bed_temperature="60" -s material_final_print_temperature="195" -s support_tree_angle="40" -s default_material_print_temperature="210" -s support_pattern="zigzag" -s material_surface_energy="100" -s skin_edge_support_layers="4" -s print_sequence="all_at_once" -s support_xy_distance_overhang="0.2" -s infill_support_enabled="false" -s infill_before_walls="true" -s infill_overlap_mm="0.04" -s sub_div_rad_add="0.4" -s infill_multiplier="1" -s zig_zaggify_infill="false" -s infill_pattern="cubic" -s material_adhesion_tendency="10" -s skin_overlap_mm="0.02" -s machine_heat_zone_length="16" -s machine_max_jerk_e="5" -s acceleration_ironing="3000" -s speed_infill="60" -s speed_ironing="20" -s material_no_load_move_factor="0.94086" -s raft_surface_jerk="20" -s speed_z_hop="10" -s ironing_inset="0.35" -s ironing_line_spacing="0.1" -s retraction_hop_after_extruder_switch_height="1" -s material_initial_print_temperature="200" -s mesh_position_x="0" -s bridge_settings_enabled="false" -s ironing_only_highest_layer="false" -s meshfix_maximum_deviation="0.025" -s infill_wipe_dist="0.04" -s infill_line_width="0.4" -s roofing_material_flow="100" -s wall_line_count="3" -s bridge_wall_coast="100" -s wall_0_material_flow="100" -s wall_x_material_flow="100" -s coasting_enable="false" -s support_infill_sparse_thickness="0.1" -s machine_nozzle_size="0.4" -s brim_line_count="20" -s skin_angles="[ ]" -s prime_tower_brim_enable="false" -s bottom_layers="6" -s speed_wall_0="30" -s speed_support_infill="60" -s top_layers="8" -s wall_0_inset="0" -s anti_overhang_mesh="false" -s top_bottom_extruder_nr="-1" -s roofing_layer_count="0" -s material_bed_temperature_layer_0="60" -s jerk_travel="30" -s wipe_move_distance="20" -s skin_line_width="0.4" -s material_shrinkage_percentage="100" -s machine_extruder_count="1" -s cool_min_layer_time_fan_speed_max="10" -s infill_wall_line_count="0" -s ironing_monotonic="false" -s ironing_pattern="zigzag" -s machine_heated_build_volume="false" -s infill_material_flow="100" -s z_seam_y="100" -s infill_support_angle="40" -s machine_firmware_retract="false" -s ironing_enabled="false" -s support_zag_skip_count="5" -s skirt_gap="3" -s z_seam_x="100" -s hole_xy_offset="0" -s skirt_brim_speed="30" -s support_enable="false" -s xy_offset="0" -s wall_min_flow="0" -s prime_tower_line_width="0.4" -s filter_out_tiny_gaps="true" -s lightning_infill_prune_angle="40" -s support_fan_enable="false" -s infill_sparse_thickness="0.1" -s support_mesh="false" -s travel_compensate_overlapping_walls_0_enabled="true" -s infill_extruder_nr="-1" -s wireframe_enabled="false" -s material_diameter="2.85" -s travel_compensate_overlapping_walls_x_enabled="true" -s support_bottom_material_flow="100" -s jerk_print_layer_0="20" -s bridge_wall_min_length="5" -s alternate_extra_perimeter="false" -s bridge_wall_speed="15" -s meshfix_union_all_remove_holes="false" -s xy_offset_layer_0="0" -s outer_inset_first="false" -s optimize_wall_printing_order="false" -s support_roof_line_width="0.4" -s infill_mesh_order="0" -s cool_min_speed="10" -s machine_min_cool_heat_time_window="50" -s roofing_angles="[ ]" -s z_seam_corner="z_seam_corner_inner" -s support_tree_branch_diameter="2" -s z_seam_relative="false" -s initial_bottom_layers="6" -s extruder_prime_pos_abs="false" -s material_flow_layer_0="100" -s material_standby_temperature="150" -s layer_height_0="0.3" -s material_anti_ooze_retracted_position="-4" -s support_roof_angles="[ ]" -s machine_nozzle_tip_outer_diameter="1" -s skin_no_small_gaps_heuristic="false" -s machine_height="200" -s machine_buildplate_type="glass" -s gradual_infill_steps="0" -s acceleration_support_infill="3000" -s cool_fan_speed_min="100" -s support_tree_branch_distance="1" -s machine_extruders_share_heater="false" -s machine_name="Prusa i3" -s initial_layer_line_width_factor="100" -s top_skin_preshrink="1" -s raft_base_thickness="0.3" -s zig_zaggify_support="false" -s machine_end_gcode="M104 S0 ;extruder heater off
+M140 S0 ;heated bed heater off (if you have it)
+G91 ;relative positioning
+G1 E-1 F300  ;retract the filament a bit before lifting the nozzle, to release some of the pressure
+G1 Z+0.5 E-5 X-20 Y-20 F9000 ;move Z up a bit and retract filament even more
+G28 X0 Y0 ;move X/Y to min endstops, so the head is out of the way
+M84 ;steppers off
+G90 ;absolute positioning" -s bridge_fan_speed="100" -s ooze_shield_enabled="false" -s machine_center_is_zero="false" -s machine_nozzle_expansion_angle="45" -s extruder_prime_pos_z="0" -s machine_always_write_active_tool="false" -s connect_infill_polygons="true" -s infill_line_distance="3.2432432432432434" -s material_guid="506c9f0d-e3aa-4bd4-b2d2-23e2425b1aa9" -s support_conical_min_width="5" -s gradual_infill_step_height="1.5" -s material_bed_temp_wait="true" -s layer_0_z_overlap="0.22" -s infill_randomize_start_location="false" -s top_skin_expand_distance="1" -s machine_extruders_share_nozzle="false" -s support_angle="50" -s prime_tower_wipe_enabled="true" -s layer_start_y="0" -s wipe_pause="0" -s machine_extruders_shared_nozzle_initial_retraction="0" -s machine_show_variants="false" -s machine_nozzle_head_distance="3" -s skirt_brim_line_width="0.4" -s speed_support_bottom="40" -s skin_monotonic="false" -s support_type="everywhere" -s travel_avoid_distance="0.625" -s material_print_temperature_layer_0="215" -s machine_max_feedrate_z="2.99792e+11" -s min_skin_width_for_expansion="0" -s machine_acceleration="4000" -s jerk_ironing="20" -s support_bottom_distance="0.1" -s material_flow_temp_graph="[[3.5,200],[7.0,240]]" -s material_print_temp_prepend="true" -s connect_skin_polygons="false" -s machine_max_acceleration_y="9000" -s machine_nozzle_heat_up_speed="2" -s roofing_extruder_nr="-1" -s cool_fan_speed_max="100" -s min_infill_area="0" -s layer_start_x="0" -s support_brim_enable="false" -s roofing_monotonic="false" -s bottom_skin_preshrink="1" -s machine_nozzle_temp_enabled="true" -s skirt_line_count="1" -s support_tower_maximum_supported_diameter="3" -s machine_depth="200" -s support_bottom_offset="0" -s machine_endstop_positive_direction_x="false" -s machine_use_extruder_offset_to_offset_coords="true" -s machine_max_feedrate_x="2.99792e+11" -s machine_gcode_flavor="RepRap (Marlin/Sprinter)" -s material_extrusion_cool_down_speed="0.7" -s raft_interface_speed="15" -s wall_line_width_0="0.4" -s material_bed_temp_prepend="true" -s retraction_combing_max_distance="0" -s material_maximum_park_duration="300" -s top_bottom_pattern="lines" -s machine_max_feedrate_y="2.99792e+11" -s support_mesh_drop_down="true" -s infill_offset_x="0" -s machine_max_acceleration_x="9000" -s fill_outline_gaps="false" -s coasting_volume="0.064" -s wall_x_extruder_nr="-1" -s bridge_skin_material_flow_2="100" -s machine_endstop_positive_direction_y="false" -s gradual_support_infill_step_height="1" -s machine_max_acceleration_z="100" -s machine_start_gcode="G21 ;metric values
+G90 ;absolute positioning
+M82 ;set extruder to absolute mode
+M107 ;start with the fan off
+G28 X0 Y0 ;move X/Y to min endstops
+G28 Z0 ;move Z to min endstops
+G1 Z15.0 F9000 ;move the platform down 15mm
+G92 E0 ;zero the extruded length
+G1 F200 E3 ;extrude 3mm of feed stock
+G92 E0 ;zero the extruded length again
+G1 F9000
+;Put printing message on LCD screen
+M117 Printing..." -s machine_max_acceleration_e="10000" -s mesh_position_z="0" -s speed_prime_tower="60" -s infill_offset_y="0" -s multiple_mesh_overlap="0.15" -s acceleration_prime_tower="3000" -s machine_max_jerk_z="0.4" -s travel_avoid_supports="false" -s prime_tower_position_x="200" -s support_meshes_present="false" -s machine_steps_per_mm_x="50" -s acceleration_wall_0="3000" -s ironing_flow="10" -s support_extruder_nr_layer_0="0" -s support_roof_extruder_nr="0" -s support_initial_layer_line_distance="2.66" -s machine_steps_per_mm_z="50" -s machine_steps_per_mm_e="1600" -s wall_0_extruder_nr="-1" -s support_roof_material_flow="100" -s machine_endstop_positive_direction_z="true" -s machine_nozzle_cool_down_speed="2" -s machine_steps_per_mm_y="50" -s machine_minimum_feedrate="0" -s speed_wall_x="60" -s layer_height=".2" -s wall_line_width_x="0.4" -s machine_feeder_wheel_diameter="10" -s infill_angles="[ ]" -s top_bottom_pattern_0="lines" -s machine_max_feedrate_e="2.99792e+11" -s machine_max_jerk_xy="20" -s support_line_width="0.4" -s support_wall_count="1" -s lightning_infill_overhang_angle="40" -s support_bottom_line_width="0.4" -s switch_extruder_retraction_speed="20" -s bottom_skin_expand_distance="1" -s build_volume_temperature="0" -s material_break_preparation_retracted_position="-16" -s material_break_preparation_speed="2" -s raft_surface_line_spacing="0.4" -s material_break_retracted_position="-50" -s cool_min_layer_time="5" -s material_break_speed="25" -s material_break_temperature="50" -s material_flush_purge_speed="0.5" -s retraction_hop_after_extruder_switch="true" -s wireframe_flow_connection="100" -s material_flush_purge_length="60" -s material_end_of_filament_purge_speed="0.5" -s support_connect_zigzags="true" -s material_end_of_filament_purge_length="20" -s acceleration_wall_x="3000" -s wireframe_roof_inset="3" -s skin_material_flow="100" -s retraction_count_max="90" -s skirt_brim_material_flow="100" -s retraction_combing="all" -s wipe_retraction_prime_speed="2" -s support_material_flow="100" -s machine_nozzle_id="unknown" -s support_bottom_pattern="concentric" -s prime_tower_flow="100" -s speed_roofing="25" -s jerk_travel_layer_0="20" -s speed_topbottom="30" -s conical_overhang_angle="50" -s material_print_temperature="210" -s speed_support_roof="40" -s speed_travel="120" -s minimum_roof_area="1" -s speed_slowdown_layers="2" -s speed_equalize_flow_enabled="false" -s acceleration_infill="3000" -s retraction_hop_enabled="false" -s acceleration_roofing="3000" -s skin_outline_count="1" -s acceleration_topbottom="3000" -s acceleration_support_roof="3000" -s acceleration_support_bottom="3000" -s machine_width="200" -s acceleration_travel_layer_0="3000" -s relative_extrusion="false" -s adhesion_extruder_nr="0" -s acceleration_travel="5000" -s meshfix_extensive_stitching="false" -s raft_interface_line_width="0.7" -s acceleration_skirt_brim="3000" -s support_offset="0" -s jerk_enabled="false" -s wall_min_flow_retract="false" -s jerk_infill="20" -s jerk_wall_0="20" -s jerk_wall_x="20" -s infill_enable_travel_optimization="false" -s cool_fan_full_layer="2" -s wipe_brush_pos_x="100" -s bridge_skin_speed="15" -s raft_surface_acceleration="3000" -s jerk_roofing="20" -s jerk_topbottom="20" -s support_use_towers="true" -s jerk_support_infill="20" -s wireframe_roof_drag_along="0.8" -s jerk_support_roof="20" -s extruders_enabled_count="1" -s extruder_prime_pos_y="0" -s jerk_support_bottom="20" -s adaptive_layer_height_threshold="0.2" -s support_roof_pattern="concentric" -s jerk_prime_tower="20" -s jerk_skirt_brim="20" -s retraction_enable="true" -s brim_gap="0" -s retract_at_layer_change="false" -s carve_multiple_volumes="true" -s fill_perimeter_gaps="everywhere" -s retraction_amount="6.5" -s retraction_retract_speed="25" -s material_print_temp_wait="true" -s support_bottom_height="1" -s gantry_height="1e+11" -s support_interface_skip_height="0.3" -s acceleration_enabled="false" -s z_seam_type="sharpest_corner" -s retraction_prime_speed="25" -s retraction_extra_prime_amount="0" -s retraction_min_travel="1.5" -s retraction_extrusion_window="4.5" -s acceleration_print_layer_0="3000" -s limit_support_retractions="true" -s wall_0_wipe_dist="0.2" -s travel_retract_before_outer_wall="false" -s speed_equalize_flow_max="150" -s support_infill_extruder_nr="0" -s travel_avoid_other_parts="true" -s retraction_hop_only_when_collides="false" -s retraction_hop="1" -s cool_fan_speed_0="0" -s cool_lift_head="false" -s speed_travel_layer_0="60" -s support_bottom_extruder_nr="0" -s support_tree_branch_diameter_angle="5" -s support_tree_collision_resolution="0.4" -s speed_print_layer_0="30" -s machine_shape="rectangular" -s support_line_distance="2.66" -s material_break_preparation_temperature="50" -s support_infill_angles="[ ]" -s support_xy_overrides_z="z_overrides_xy" -s skirt_brim_minimal_length="250" -s support_brim_line_count="20" -s support_top_distance="0.1" -s cool_fan_enabled="true" -s support_xy_distance="0.7" -s magic_spiralize="false" -s support_bottom_stair_step_height="0.3" -s support_structure="normal" -s machine_heated_bed="true" -s support_bottom_stair_step_width="5" -s support_bottom_stair_step_min_slope="10" -s support_roof_enable="false" -s support_join_distance="2" -s gradual_support_infill_steps="0" -s minimum_support_area="0" -s support_bottom_enable="false" -s support_roof_height="1" -s support_roof_line_distance="0.4" -s support_bottom_line_distance="0.4" -s meshfix_keep_open_polygons="false" -s minimum_bottom_area="1" -s support_roof_offset="0" -s support_bottom_angles="[ ]" -s wireframe_flow_flat="100" -s roofing_line_width="0.4" -s adhesion_type="brim" -s lightning_infill_straightening_angle="40" -s support_supported_skin_fan_speed="100" -s support_tower_diameter="3" -s support_tower_roof_angle="65" -s prime_blob_enable="false" -s meshfix_union_all="true" -s extruder_prime_pos_x="0" -e0 -s machine_nozzle_offset_y="0" -s extruder_prime_pos_z="0" -s machine_nozzle_offset_x="0" -s extruder_nr="0" -s machine_extruder_end_pos_y="0" -s material_diameter="1.75" -s machine_nozzle_id="unknown" -s machine_nozzle_size="0.4" -s extruder_prime_pos_x="0" -s machine_extruder_start_pos_abs="false" -s machine_extruder_start_pos_y="0" -s machine_extruder_start_code="" -s machine_extruder_end_pos_x="0" -s machine_extruder_end_code="" -s extruder_prime_pos_y="0" -s machine_extruder_start_pos_x="0" -s machine_extruder_end_pos_abs="false" -s machine_extruder_cooling_fan_number="0" -g -e0 -l "0" -s machine_nozzle_offset_y="0" -s extruder_prime_pos_z="0" -s machine_nozzle_offset_x="0" -s extruder_nr="0" -s machine_extruder_end_pos_y="0" -s material_diameter="1.75" -s machine_nozzle_id="unknown" -s machine_nozzle_size="0.4" -s extruder_prime_pos_x="0" -s machine_extruder_start_pos_abs="false" -s machine_extruder_start_pos_y="0" -s machine_extruder_start_code="" -s machine_extruder_end_pos_x="0" -s machine_extruder_end_code="" -s extruder_prime_pos_y="0" -s machine_extruder_start_pos_x="0" -s machine_extruder_end_pos_abs="false" -s machine_extruder_cooling_fan_number="0"
+Progress: start accomplished in 0.000s
+Starting slice...
+Slicing model...
+slice of mesh took 0.000 seconds
+slice make polygons took 0.000 seconds
+Progress:slice:1:1 	0.018531%
+Progress: slice accomplished in 0.000s
+Starting layerparts...
+Progress:layerparts:1:1 	0.023922%
+Progress: layerparts accomplished in 0.000s
+Starting inset+skin...
+Progress:inset+skin:3:100 	0.031498%
+Progress:inset+skin:10:100 	0.049177%
+Progress:inset+skin:15:100 	0.061805%
+Progress:inset+skin:21:100 	0.076958%
+Progress:inset+skin:26:100 	0.089585%
+Progress:inset+skin:36:100 	0.114840%
+Progress:inset+skin:49:100 	0.147672%
+Progress:inset+skin:63:100 	0.183029%
+Progress:inset+skin:75:100 	0.213336%
+Progress:inset+skin:87:100 	0.243642%
+Progress:inset+skin:98:100 	0.271422%
+Progress:inset+skin:1:1 	0.276473%
+Layer count: 50
+Progress: inset+skin accomplished in 0.000s
+Starting support...
+Processing platform adhesion
+Progress: support accomplished in 0.016s
+Starting export...
+Multithreading GcodeLayerThreader with 8 threads.
+Progress:export:1:50 	0.466742%
+Progress:export:2:50 	0.477618%
+Progress:export:3:50 	0.488493%
+Progress:export:4:50 	0.499369%
+Progress:export:5:50 	0.510245%
+Progress:export:6:50 	0.521120%
+Progress:export:7:50 	0.531996%
+Progress:export:8:50 	0.542872%
+Progress:export:9:50 	0.553747%
+Progress:export:10:50 	0.564623%
+Progress:export:11:50 	0.575499%
+Progress:export:12:50 	0.586374%
+Progress:export:13:50 	0.597250%
+Progress:export:14:50 	0.608125%
+Progress:export:15:50 	0.619001%
+Progress:export:16:50 	0.629877%
+Progress:export:17:50 	0.640752%
+Progress:export:18:50 	0.651628%
+Progress:export:19:50 	0.662504%
+Progress:export:20:50 	0.673379%
+Progress:export:21:50 	0.684255%
+Progress:export:22:50 	0.695131%
+Progress:export:23:50 	0.706006%
+Progress:export:24:50 	0.716882%
+Progress:export:25:50 	0.727757%
+Progress:export:26:50 	0.738633%
+Progress:export:27:50 	0.749509%
+Progress:export:28:50 	0.760384%
+Progress:export:29:50 	0.771260%
+Progress:export:30:50 	0.782136%
+Progress:export:31:50 	0.793011%
+Progress:export:32:50 	0.803887%
+Progress:export:33:50 	0.814763%
+Progress:export:34:50 	0.825638%
+Progress:export:35:50 	0.836514%
+Progress:export:36:50 	0.847389%
+Progress:export:37:50 	0.858265%
+Progress:export:38:50 	0.869141%
+Progress:export:39:50 	0.880016%
+Progress:export:40:50 	0.890892%
+Progress:export:41:50 	0.901768%
+Progress:export:42:50 	0.912643%
+Progress:export:43:50 	0.923519%
+Progress:export:44:50 	0.934394%
+Progress:export:45:50 	0.945270%
+Progress:export:46:50 	0.956146%
+Progress:export:47:50 	0.967021%
+Progress:export:48:50 	0.977897%
+Progress:export:49:50 	0.988773%
+Progress:export:50:50 	0.999648%
+Progress: export accomplished in 0.516s
+Progress:process:1:1 	1.000000%
+Total time elapsed  0.53s.
+Gcode header after slicing:
+;FLAVOR:Marlin
+;TIME:325
+;Filament used: 0.352242m
+;Layer height: 0.2
+;MINX:87.55
+;MINY:87.55
+;MINZ:0.3
+;MAXX:112.45
+;MAXY:112.45
+;MAXZ:10.1
+End of gcode header.
+Print time (s): 325
+Print time (hr|min|s): 0h 5m 25s
+Filament (mm^3): 847
