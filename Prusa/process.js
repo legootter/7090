@@ -13,7 +13,7 @@ for(const infill of infills){
         if(!fs.existsSync(`./output/${infill}/${wallCount}/${holeSize}`))fs.mkdirSync(`./output/${infill}/${wallCount}/${holeSize}`,{recursive:true})
         let data=fs.readFileSync(`./outputraw/${infill}/${file}`)
         if(infillDensity.length==1){newfile=file.replace(/infillDensity=[0-9]*/,`infillDensity=0${infillDensity}`)}
-        fs.writeFileSync(`./output/${infill}/${wallCount}/${holeSize}/${newfile??file}`,JSON.stringify(Number(data.toString().match(/;Filament used: [0-9\.]*/)[0].split(": ")[1])*2.9825))
+        fs.writeFileSync(`./output/${infill}/${wallCount}/${holeSize}/${newfile??file}`,JSON.stringify((Number(data.toString().match(/; filament used \[mm\] = [0-9\.]*/)[0].split("= ")[1])/1000)*2.9825))
         i+=1
     }
 }
@@ -22,7 +22,7 @@ console.log(`processing completed in ${end-start} ms, ${i} files were processed`
 
 
 /*
-Cura
+Prusa
     output
         cubic
             2walls
@@ -38,7 +38,7 @@ Cura
             3walls
                 holesize
                     "data"
-        trihexagonal
+        stars
             2walls
                 holesize
                     "data"

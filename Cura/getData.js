@@ -8,7 +8,7 @@ let dir="C:\\dev\\School\\7090\\Cura"
 
 //CHANGE LAYER HEIGHTN IN PRUSA_I3.DEF.JSON
 
-//to get "data" fro this^ fs.readditsync() for each file file.match(/infillType=[a-zA-Z]*/)[0].split("=")[1] for infill type
+//to get "data" from title, fs.readditsync() for each file file.match(/infillType=[a-zA-Z]*/)[0].split("=")[1] for infill type
 
 for(const infill of infills){//infill type
     for(let w=2;w<4;w+=1){//wall count

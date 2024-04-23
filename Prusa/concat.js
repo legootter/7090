@@ -2,6 +2,7 @@ import fs from "fs";
 let infills=fs.readdirSync("./output");
 let plots={};
 
+
 for(const infill of infills){
     let walls=fs.readdirSync(`./output/${infill}`)
     plots[infill]={}
@@ -31,7 +32,7 @@ for(const infill in plots){
         plots[infill][wall]["length"]="["+plots[infill][wall]["length"].toString()+"]"
         fs.writeFileSync(`results/${wall}${infill}.m`,`A=${plots[infill][wall]["hole"]};\nB=${plots[infill][wall]["infill"]};\nC=${plots[infill][wall]["length"]};\nsurf(B,A,C)`)
     }
-    fs.writeFileSync(`results/${infill}.m`,`A=${plots[infill]["2"]["hole"]};\nB=${plots[infill]["2"]["infill"]};\nC=${plots[infill]["2"]["length"]};\nsurc(B,A,C)\nhold on;\nD=${plots[infill]["3"]["hole"]};\nE=${plots[infill]["3"]["infill"]};\nF=${plots[infill]["3"]["length"]};\nsurc(E,D,F)`)
+    fs.writeFileSync(`results/${infill}.m`,`A=${plots[infill]["2"]["hole"]};\nB=${plots[infill]["2"]["infill"]};\nC=${plots[infill]["2"]["length"]};\nsurf(B,A,C)\nhold on;\nD=${plots[infill]["3"]["hole"]};\nE=${plots[infill]["3"]["infill"]};\nF=${plots[infill]["3"]["length"]};\nsurf(E,D,F)`)
 }
 
 //Scatter plot 1
@@ -52,7 +53,7 @@ for(let i=90;i<3800;i++){
     if(i%100==0){
         s2y1.push(plots["cubic"]["3"]["length"].replaceAll(";,","").split(",")[i-90])
         s2y2.push(plots["gyroid"]["3"]["length"].replaceAll(";,","").split(",")[i-90])
-        s2y3.push(plots["trihexagon"]["3"]["length"].replaceAll(";,","").split(",")[i-90])
+        s2y3.push(plots["stars"]["3"]["length"].replaceAll(";,","").split(",")[i-90])
     }
 }
 let s2x=plots["cubic"]["3"]["hole"]
@@ -78,7 +79,7 @@ let s4y3=[];
 for(let i=1990;i<2090;i++){
         s4y1.push(plots["cubic"]["3"]["length"].replaceAll(";,","").split(",")[i-90])
         s4y2.push(plots["gyroid"]["3"]["length"].replaceAll(";,","").split(",")[i-90])
-        s4y3.push(plots["trihexagon"]["3"]["length"].replaceAll(";,","").split(",")[i-90])
+        s4y3.push(plots["stars"]["3"]["length"].replaceAll(";,","").split(",")[i-90])
 
 }
 let s4x=plots["cubic"]["3"]["infill"]

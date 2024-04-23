@@ -4,7 +4,7 @@ const app=express()
 app.listen(1014)
 
 app.all("/",(req,res)=>{
-res.sendFile("C:\\dev\\School\\7090\\index.html")
+    res.sendFile("C:\\dev\\School\\7090\\index.html")
 })
 
 app.get("/getcuradata",(req,res)=>{
@@ -40,14 +40,34 @@ app.get("/cleanupcuradata",(req,res)=>{
     res.redirect("/")
 })
 app.get("/getprusadata",(req,res)=>{
+    exec("node getData.js",{cwd:"C:\\dev\\School\\7090\\Prusa"},(err,out,serr)=>{
+        if(err)console.log(err)
+        if(out)console.log(out)
+        if(serr)console.log(serr)
+    })
     res.redirect("/")
 })
 app.get("/processprusadata",(req,res)=>{
+    exec("node process.js",{cwd:"C:\\dev\\School\\7090\\Prusa"},(err,out,serr)=>{
+        if(err)console.log(err)
+        if(out)console.log(out)
+        if(serr)console.log(serr)
+    })
     res.redirect("/")
 })
 app.get("/concatprusadata",(req,res)=>{
+    exec("node concat.js",{cwd:"C:\\dev\\School\\7090\\Prusa"},(err,out,serr)=>{
+        if(err)console.log(err)
+        if(out)console.log(out)
+        if(serr)console.log(serr)
+    })
     res.redirect("/")
 })
 app.get("/cleanupprusadata",(req,res)=>{
+    exec("node cleanup.js",{cwd:"C:\\dev\\School\\7090\\Prusa"},(err,out,serr)=>{
+        if(err)console.log(err)
+        if(out)console.log(out)
+        if(serr)console.log(serr)
+    })
     res.redirect("/")
 })

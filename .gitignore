@@ -2,7 +2,11 @@ objbkp/*
 Cura/results/*
 Cura/output/*
 Cura/outputraw/*
+Prusa/results/*
+Prusa/output/*
+Prusa/outputraw/*
 bkp/*
+*.zip
 
 # Logs
 logs
