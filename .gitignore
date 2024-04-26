@@ -1,12 +1,7 @@
-objbkp/*
-Cura/results/*
-Cura/output/*
-Cura/outputraw/*
-Prusa/results/*
-Prusa/output/*
-Prusa/outputraw/*
-bkp/*
-*.zip
+*/results/*
+*/output/*
+*/outputraw/*
+.env
 
 # Logs
 logs

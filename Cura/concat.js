@@ -1,6 +1,19 @@
 import fs from "fs";
+//TODO add filtering to all fs.readdirsyncs
 let infills=fs.readdirSync("./output");
 let plots={};
+let mods=`
+A=A./100;
+surf(B,A,C,'FaceColor','interp') %creates a surface plot
+colorbar; %enables the colorbar legend
+colormap jet; %changes the color scheme
+view (-135,15); %sets the view angle
+title('Part Weight','Cubic infill, 2 walls');
+xlabel('Hole Diameter (mm)');
+ylabel('Infill Density (%)');
+zlabel('Weight (Grams)');
+fontsize(gcf,scale=2);`
+
 
 for(const infill of infills){
     let walls=fs.readdirSync(`./output/${infill}`)
@@ -29,9 +42,9 @@ for(const infill in plots){
         plots[infill][wall]["hole"]="["+plots[infill][wall]["hole"].toString()+"]"
         plots[infill][wall]["infill"]="["+plots[infill][wall]["infill"].toString()+"]"
         plots[infill][wall]["length"]="["+plots[infill][wall]["length"].toString()+"]"
-        fs.writeFileSync(`results/${wall}${infill}.m`,`A=${plots[infill][wall]["hole"]};\nB=${plots[infill][wall]["infill"]};\nC=${plots[infill][wall]["length"]};\nsurf(B,A,C)`)
+        fs.writeFileSync(`results/${wall}${infill}.m`,`A=${plots[infill][wall]["hole"]};\nB=${plots[infill][wall]["infill"]};\nC=${plots[infill][wall]["length"]};\n${mods}`)
     }
-    fs.writeFileSync(`results/${infill}.m`,`A=${plots[infill]["2"]["hole"]};\nB=${plots[infill]["2"]["infill"]};\nC=${plots[infill]["2"]["length"]};\nsurc(B,A,C)\nhold on;\nD=${plots[infill]["3"]["hole"]};\nE=${plots[infill]["3"]["infill"]};\nF=${plots[infill]["3"]["length"]};\nsurc(E,D,F)`)
+    fs.writeFileSync(`results/${infill}.m`,`A=${plots[infill]["2"]["hole"]};\nB=${plots[infill]["2"]["infill"]};\nC=${plots[infill]["2"]["length"]};\nsurc(B,A,C)\nhold on;\nD=${plots[infill]["3"]["hole"]};\nE=${plots[infill]["3"]["infill"]};\nF=${plots[infill]["3"]["length"]};\nsurc(E,D,F);\n${mods}`)
 }
 
 //Scatter plot 1

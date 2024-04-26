@@ -1,4 +1,5 @@
-import fs from "fs"
+import fs from "fs";
+//TODO add filtering to all fs.readdirsyncs
 let infills=fs.readdirSync("./outputraw")
 let i=0
 let start= new Date().valueOf()
@@ -22,6 +23,8 @@ console.log(`processing completed in ${end-start} ms, ${i} files were processed`
 
 
 /*
+Folder Structure
+
 Prusa
     output
         cubic

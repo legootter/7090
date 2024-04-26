@@ -1,4 +1,5 @@
 import fs from "fs";
+//TODO add filtering to all fs.readdirsyncs
 let infills=fs.readdirSync("./output");
 let plots={};
 
