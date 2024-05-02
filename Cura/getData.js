@@ -1,16 +1,11 @@
 import child from "node:child_process";
 import fs from"fs";
 import 'dotenv/config';
-//TODO add filtering to all fs.readdirsyncs
-let infills=fs.readdirSync("./outputraw",)
-let stls=fs.readdirSync("../objects",)
+let infills=fs.readdirSync("./outputraw").filter(result=>!result.includes("."))
+let stls=fs.readdirSync("../objects").filter(result=>result.endsWith(".stl"))
 let t=0
 let plaUUid="506c9f0d-e3aa-4bd4-b2d2-23e2425b1aa9"
 let dir=process.env.DIRNAME+"\\Cura"
-
-//CHANGE LAYER HEIGHTN IN PRUSA_I3.DEF.JSON
-
-//to get "data" from title, fs.readditsync() for each file file.match(/infillType=[a-zA-Z]*/)[0].split("=")[1] for infill type
 
 for(const infill of infills){//infill type
     for(let w=2;w<4;w+=1){//wall count
@@ -28,7 +23,6 @@ for(const infill of infills){//infill type
         }
     }
 }
-        
 
 /**
  * @param {String} infillType The type of infill

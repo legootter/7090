@@ -2,7 +2,7 @@ import fs from "fs";
 //TODO add filtering to all fs.readdirsyncs
 let infills=fs.readdirSync("./output");
 let plots={};
-
+fs.writeFileSync("./results/data.csv","Infill Type,Hole Size, Wall Count, Infill Density\n")
 
 for(const infill of infills){
     let walls=fs.readdirSync(`./output/${infill}`)
@@ -18,6 +18,7 @@ for(const infill of infills){
                 if(!plots[infill][wall]["infill"].includes(infillDensity))plots[infill][wall]["infill"].push(infillDensity)
                 let data=fs.readFileSync(`./output/${infill}/${wall}/${hole}/${file}`)
                 plots[infill][wall]["length"].push(data.toString())
+                fs.appendFileSync("./results/data.csv",`${infill},${hole},${wall},${data}\n`)
             }
             plots[infill][wall]["length"].push(";")
         }
