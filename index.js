@@ -5,6 +5,10 @@ process.env.DIRNAME=__dirname
 const app=express()
 app.listen(1014)
 
+app.all("/css",(req,res)=>{
+    res.sendFile(`${process.env.DIRNAME}/main.css`,(err)=>console.log(err))
+})
+
 app.all("/",(req,res)=>{
     res.sendFile(`${process.env.DIRNAME}\\index.html`)
 })
